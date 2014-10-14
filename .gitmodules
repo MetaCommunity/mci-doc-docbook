@@ -1,0 +1,4 @@
+[submodule "externals/rnc-mode"]
+	path = externals/rnc-mode
+	url = git@github.com:TreeRex/rnc-mode.git
+	branch = master

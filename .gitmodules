@@ -2,3 +2,7 @@
 	path = externals/rnc-mode
 	url = git@github.com:TreeRex/rnc-mode.git
 	branch = master
+[submodule "extenals/tdtd"]
+	path = extenals/tdtd
+	url = git@github.com:tkg/tdtd.git
+	branch = master

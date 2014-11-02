@@ -1,17 +1,22 @@
 <?xml version="1.0"?>
+<!DOCTYPE locatingRules [
+
+<!ENTITY docbook "module.docbook.rnc">
+
+]>
 <!-- schema locating file for nXML -->
 <locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
     <namespace ns="http://docbook.org/ns/docbook" uri="module.docbook.rnc"/>
 
- <documentElement localName="set" uri="&docBook;"/>
- <documentElement localName="book" uri="&docBook;"/>
- <documentElement localName="part" uri="&docBook;"/>
- <documentElement localName="chapter" uri="&docBook;"/>
- <documentElement localName="article" uri="&docBook;"/>
- <documentElement localName="section" uri="&docBook;"/>
- <documentElement localName="glossary" uri="&docBook;"/>
- <documentElement localName="bibliography" uri="&docBook;"/>
- <documentElement localName="appendix" uri="&docBook;"/>
- <documentElement localName="reference" uri="&docBook;"/>
- <documentElement localName="refentry" uri="&docBook;"/>
+ <documentElement localName="set" uri="&docbook;"/>
+ <documentElement localName="book" uri="&docbook;"/>
+ <documentElement localName="part" uri="&docbook;"/>
+ <documentElement localName="chapter" uri="&docbook;"/>
+ <documentElement localName="article" uri="&docbook;"/>
+ <documentElement localName="section" uri="&docbook;"/>
+ <documentElement localName="glossary" uri="&docbook;"/>
+ <documentElement localName="bibliography" uri="&docbook;"/>
+ <documentElement localName="appendix" uri="&docbook;"/>
+ <documentElement localName="reference" uri="&docbook;"/>
+ <documentElement localName="refentry" uri="&docbook;"/>
 </locatingRules>

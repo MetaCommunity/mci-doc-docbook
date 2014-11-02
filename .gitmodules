@@ -1,0 +1,8 @@
+[submodule "externals/rnc-mode"]
+	path = externals/rnc-mode
+	url = git@github.com:TreeRex/rnc-mode.git
+	branch = master
+[submodule "extenals/tdtd"]
+	path = externals/tdtd
+	url = git@github.com:tkg/tdtd.git
+	branch = master

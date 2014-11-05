@@ -17,7 +17,7 @@ include "docbookxi.rnc" {
     db.version.attribute = attribute version { text }
 
     db.remark =
-            element remark { db.remark.attlist, (db._text | db.all.inlines) }
+            element remark { db.remark.attlist, (db._text | db.all.inlines)+ }
 
 
     db.productname =

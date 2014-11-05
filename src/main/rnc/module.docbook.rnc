@@ -3,9 +3,19 @@
 default namespace db = "http://docbook.org/ns/docbook"
 
 
-include "docbookxi.rnc" {
-}
 
+
+include "docbookxi.rnc" {
+
+## set default version attribute
+## see also 
+## * http://docbook.org/tdg51/en/html/ch05.html
+## * http://www.xml.com/lpt/a/984
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+[ a:defaultValue = "5.0CR5-extension metacommunity-1.0" ]
+db.version.attribute = attribute version { text }
+
+}
 
 db.set.components
 	|= db.xi.include

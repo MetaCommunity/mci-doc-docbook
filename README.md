@@ -7,9 +7,74 @@ Application of the DocBook tool chain, for the MetaCommunity Project [MCi]
 
 Source tree at Github: [git@github.com:MetaCommunity/mci-doc-docbook.git][mci-doc-docbook]
 
+
 ## Usage
 
 See also: _[Documenting a Design Decision: Documentation Framework for the AFFTA Source Tree][affta-doc]_
+
+### Extension for Applications of the DocBook Toolchain onto ASDF
+
+(TBD)
+
+#### XML Components
+
+* Class: `XML-COMPONENT`
+* Class: `XML-FILE`
+
+_Note: An `XML-COMPONENT` could be provided as simply a stream object
+-- possibly embedded within an information object of an XML format or
+other format, e.g. a Common Lisp docuentation string, whereas an
+`XML-FILE` must be mapped to a file on a filesystem.__
+
+#### Schema Components
+
+* Class: `SCHEMA-COMPONENT`
+* Class: `SCHEMA-FILE`
+
+* Class: `DTD-COMPONENT`
+* Class: `DTD-FILE`
+
+* Class: `RNG-SCHEMA-COMPONENT`
+* Class: `RNG-SCHEMA-FILE`
+
+* Class: `RNC-SCHEMA-COMPONENT`
+* Class: `RNC-SCHEMA-FILE`
+
+* Class: `XSD-SCHEMA-COMPONENT`
+* Class: `XSD-SCHEMA-FILE`
+
+#### Document Formatting Components
+
+* Class: `FORMATTING-SPECIFIER`
+* Class: `XSL-STYLESHEET-COMPONENT`
+* Class: `XSL-STYLESHEET-FILE`
+
+#### Output Files
+
+_Purpose: To define systems of ASDF output files, for development of
+an application packaging system. See also: [dobelle-app][dobelle-app]_
+
+* Class: `HTML-FILE`
+* Class: `PDF-FILE`
+* Class: `MANUAL-PAGE-FILE`
+* Class: `TEXINFO-FILE`
+* Class: `TEX-FILE`
+
+#### Application Definitions
+
+_Purpose: To define 'applications' such as would be expected to be 
+installed on the host operating system, for validation and formatting
+of source files. See also: [dobelle-app][dobelle-app]_
+
+_Example usage cases:_
+
+* _Define syntax checker for `XML-Component` and `XML-File` objects_
+* _Define XSLT engine for application of `XSL-Stylesheet-File` objects
+  onto `XML-File` objects_
+* _Define spelling checker for `XML-Component`, `XML-File`, and other
+  source file objects_
+* _Provide integration with Emacs and other IDE systems_
+* _Integrate system definitions with host packaging system. See also: [dobelle-app][dobelle-app]_
 
 ### MCi Extention Module for DocBook
 
@@ -76,3 +141,4 @@ within the [mci-doc-docbook][mci-doc-docbook] _source tree_
 [nxml]: http://www.thaiopensource.com/nxml-mode/
 [emacs]: http://www.gnu.org/software/emacs/
 [nxml-info]: http://www.gnu.org/software/emacs/manual/html_mono/nxml-mode.html
+[dobelle-app]: https://github.com/MetaCommunity/dobelle-app

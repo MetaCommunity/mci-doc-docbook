@@ -3,6 +3,10 @@
 default namespace db = "http://docbook.org/ns/docbook"
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 
+
+db.name = (db._text | db.publishing.inlines)*
+
+
 include "docbookxi.rnc" {
 
 ## set default version attribute
@@ -13,7 +17,18 @@ include "docbookxi.rnc" {
     db.version.attribute = attribute version { text }
 
     db.remark =
-            element remark { db.remark.attlist, db._text, db.all.inlines }
+            element remark { db.remark.attlist, (db._text | db.all.inlines) }
+
+
+    db.productname =
+            element productname { db.productname.attlist, db.name }
+
+    db.orgname =
+            element orgname { db.orgname.attlist, db.name }
+
+    db.publishername =
+            element publishername { db.publishername.attlist, db.name }
+
 
 }
 

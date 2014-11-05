@@ -29,6 +29,8 @@ include "docbookxi.rnc" {
     db.publishername =
             element publishername { db.publishername.attlist, db.name }
 
+    db.seg = 
+           element seg { db.seg.attlist, (db.all.inlines | db.simplelist)* }
 
 }
 

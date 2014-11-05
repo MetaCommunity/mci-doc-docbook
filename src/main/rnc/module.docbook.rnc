@@ -9,11 +9,12 @@ include "docbookxi.rnc" {
 ## see also 
 ## * http://docbook.org/tdg51/en/html/ch05.html
 ## * http://www.xml.com/lpt/a/984
-[ a:defaultValue = "5.0CR5-extension metacommunity-1.0" ]
-db.version.attribute = attribute version { text }
+    [ a:defaultValue = "5.0CR5-extension metacommunity-1.0" ]
+    db.version.attribute = attribute version { text }
 
-db.remark =
-	element remark { db.remark.attlist, db._text, db.all.inlines }
+    db.remark =
+            element remark { db.remark.attlist, db._text, db.all.inlines }
+
 }
 
 db.set.components

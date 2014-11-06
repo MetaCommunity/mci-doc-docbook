@@ -44,7 +44,25 @@
       <title>Extensions onto the DocBook Schema</title>
       
       <simplelist>
+        <member>The content model of the <tag
+        class="element">remark</tag> element has revised, 
+        such that all elements defined to the
+        <varname>db.all.inlines</varname> entity are now avaialble in
+        the content model of the element.</member> 
 
+        <member>The content models of each of the <tag
+        class="element">productname</tag>, <tag
+        class="element">orgname</tag>, and <tag
+        class="element">publishername</tag> elements have been
+        revised, such that &mdash; in each element &mdash; all
+        elements defined to the <varname>db.publishing.inlines</varname>
+        entity will now avaialble in the content model of the element.
+        </member>
+
+        <member>The content model of the <tag
+        class="element">seg</tag> element has revised, so as to add <tag
+        class="element">simplelist</tag> to the element's content
+        model.</member>
       </simplelist>
     </chapter>
 

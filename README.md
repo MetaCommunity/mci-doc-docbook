@@ -24,7 +24,7 @@ See also: _[Documenting a Design Decision: Documentation Framework for the AFFTA
 _Note: An `XML-COMPONENT` could be provided as simply a stream object
 -- possibly embedded within an information object of an XML format or
 other format, e.g. a Common Lisp docuentation string, whereas an
-`XML-FILE` must be mapped to a file on a filesystem.__
+`XML-FILE` must be mapped to a file on a filesystem.
 
 #### Schema Components
 
@@ -91,6 +91,7 @@ _mci-doc-docbook schema_. A summary of features effectively added to the
 	* _toc_
 	* _setindex_
 
+_FIXME: Update this section of the documentation, to synch with current revision of `src/main/rnc/module.docbook.rnc`_
 
 #### Version of Upstream DocBook Schema
 

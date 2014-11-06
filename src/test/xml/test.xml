@@ -1,0 +1,13 @@
+<!DOCTYPE article  [
+
+<!ENTITY % app.ent SYSTEM "app.ent">
+%app.ent;
+
+]>
+<article xmlns="http://docbook.org/ns/docbook">
+  <title>FOO</title>
+  <para>Foo &mdash; Foo</para>
+  
+  <remark><acronym>DB</acronym></remark>
+
+</article>

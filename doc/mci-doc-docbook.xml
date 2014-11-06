@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+
+<!ENTITY mdash
+	"&#x2014;"
+>
+
+<!ENTITY project.id "mci-doc-docbook">
+
+]>
+<book xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:math="http://www.w3.org/1998/Math/MathML"
+      xml:id="&project.id;"
+      >
+  <info>
+    <title>Reference Manual for MetaCommunity.info Extensions onto the DocBook Toolchain </title>
+    
+    <author>
+      <personname>Sean Champ</personname>
+    </author>
+
+    <date>4 Nov 2014</date>
+  </info>
+
+  <part>
+    <title>Extensions onto the ASDF System Definition Facility</title>
+    <preface>
+      <title>Overview</title>
+
+      <remark>TO DO: Add an overview about ASDF, mentioning also MK:DEFSYS</remark>
+
+      <remark>TO DO: Provide summary of motivation in develoment of these extensions</remark>
+
+      <remark>TO DO: Reference onto dobelle-app system</remark>
+    </preface>
+  </part>
+
+  <part>
+    <title>Extensions onto the DocBook Schema and DocBook XSL Stylesheets</title>
+
+    <chapter>
+      <title>Extensions onto the DocBook Schema</title>
+      
+      <simplelist>
+
+      </simplelist>
+    </chapter>
+
+    <chapter>
+      <title>Extensions onto the DocBook XSL Stylesheets</title>
+      <remark>TO DO - e.g. for handling _measurement_ elements --></remark>
+
+      <section>
+        <title>Extensions onto Stylesheets for XSL-FO Output</title>
+      </section>
+
+      <section>
+        <title>Extensions onto Stylesheets for HTML Output</title>
+      </section>
+    </chapter>
+
+    <chapter>
+      <title>Cascading Stylesheets for HTML Documentation Produced with DocBook XSL Stylesheets</title>
+      <remark>TO DO</remark>
+
+    </chapter>
+
+  </part>
+</book>
